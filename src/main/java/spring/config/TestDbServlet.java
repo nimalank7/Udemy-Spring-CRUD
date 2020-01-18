@@ -15,12 +15,12 @@ public class TestDbServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         // setup connection variables
-        String user = "springstudent";
-        String pass = "springstudent";
+        String user = "";
+        String pass = "";
 
 
-        String jdbcUrl = "jdbc:mysql://localhost:3306/web_customer_tracker?useSSL=false&serverTimezone=UTC";
-        String driver = "com.mysql.jdbc.Driver";
+        String jdbcUrl = "jdbc:postgresql://localhost:5402/employee_directory";
+        String driver = "org.postgresql.Driver";
 
         // get connection to database
 
@@ -29,7 +29,7 @@ public class TestDbServlet extends HttpServlet {
             out.println("Connecting to database: " + jdbcUrl);
             Class.forName(driver);
 
-            Connection myConn = DriverManager.getConnection(jdbcUrl, user, pass);
+            Connection myConn = DriverManager.getConnection(jdbcUrl, user, pass); // user, pass
 
             out.println("SUCCESS!!!");
 
