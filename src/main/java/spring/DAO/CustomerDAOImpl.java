@@ -13,6 +13,7 @@ import java.util.List;
 @Repository
 public class CustomerDAOImpl implements CustomerDAO {
 
+
     // need to inject the session factory
     @Autowired
     private SessionFactory sessionFactory;
