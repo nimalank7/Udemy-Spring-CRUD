@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 import spring.DAO.CustomerDAO;
 import spring.entity.Customer;
 
-import javax.transaction.Transactional;
+import jakarta.transaction.Transactional;
 import java.util.List;
 
 @Service
