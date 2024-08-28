@@ -38,12 +38,13 @@ public class WebConfig implements WebMvcConfigurer {
         // set the jdbc driver
         try {
             myDataSource.setDriverClass(env.getProperty("jdbc.driver"));
-            System.out.println("Trying...");
+            System.out.println("Trying to set the JDBC driver...");
         } catch (PropertyVetoException exc) {
             System.out.println("Error encountered!");
             exc.printStackTrace();
         }
 
+        System.out.println("Successfully set the JDBC driver!");
         System.out.println("Setting database connection properties");
 
         // set database connection properties
