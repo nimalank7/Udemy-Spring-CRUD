@@ -19,7 +19,7 @@ public class TestDbServlet extends HttpServlet {
         String pass = "";
 
 
-        String jdbcUrl = "jdbc:postgresql://localhost:5402/employee_directory";
+        String jdbcUrl = "jdbc:postgresql://localhost:5432/employee_directory";
         String driver = "org.postgresql.Driver";
 
         // get connection to database

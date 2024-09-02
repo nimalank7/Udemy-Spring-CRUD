@@ -1,6 +1,6 @@
 package spring.entity;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "customer")

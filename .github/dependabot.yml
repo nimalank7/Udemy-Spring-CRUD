@@ -5,25 +5,3 @@ updates:
   schedule:
     interval: daily
   open-pull-requests-limit: 10
-  ignore:
-  - dependency-name: org.springframework:spring-context
-    versions:
-    - 5.3.3
-    - 5.3.4
-    - 5.3.5
-  - dependency-name: org.springframework:spring-orm
-    versions:
-    - 5.3.3
-    - 5.3.4
-    - 5.3.5
-  - dependency-name: org.hibernate:hibernate-core
-    versions:
-    - 5.4.27.Final
-    - 5.4.28.Final
-    - 5.4.29.Final
-  - dependency-name: com.sun.xml.bind:jaxb-core
-    versions:
-    - 3.0.0
-  - dependency-name: org.springframework:spring-webmvc
-    versions:
-    - 5.2.3.RELEASE
